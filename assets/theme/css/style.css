@@ -264,6 +264,8 @@ iframe {
 .col-sm-6 span h5 {
   display: inline;
   margin: 0;
+  word-wrap: normal;
+  word-break: normal;
 }
 
 .col-sm-6 span img {
@@ -302,9 +304,22 @@ iframe {
 }
 
 .image-wrapper img {
-  width: 70%;
+  width: 80%;
+}
+
+.storeInfo .line {
+  width: 100%;
+  height: 2px;
+}
+
+.store-information a img {
   float: right;
-  margin-right: 7%;
+}
+
+.storeInfo input {
+  border: none;
+  border-bottom: #d8e0e7 solid 2px;
+  width: 100%;
 }
 
 .iconfont-wrapper img {
