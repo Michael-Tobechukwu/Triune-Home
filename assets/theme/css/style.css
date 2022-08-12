@@ -180,7 +180,25 @@ section .mbr-background-video-preview {
   font-weight: 700;
 }
 
+.header-overlay {
+  background-color: rgba(0, 0, 0, 0.15) !important;
+}
+
 /*! Media  */
+@media (max-width: 1024px) {
+  .header-text br,
+  .header-sub br {
+    display: none;
+  }
+  .mbr-overlay {
+    background: rgba(0, 0, 0, 0.6) !important;
+  }
+
+  .header-sub {
+    color: #fff !important;
+  }
+}
+
 .media-content {
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
@@ -334,6 +352,49 @@ iframe {
   border: 1px solid rgba(181, 195, 207, 0.48);
   border-radius: 1rem;
   width: fit-content;
+}
+
+.rates-img {
+  width: 100% !important;
+}
+
+@media (max-width: 768px) {
+  .rates-img {
+    margin-right: 0 !important;
+  }
+
+  .rates-img-col {
+    margin-left: 2rem !important;
+  }
+}
+
+@media (max-width: 568px) {
+  .card-wrapper {
+    width: 95%;
+  }
+  .card-text br {
+    display: none;
+  }
+
+  .footer-brand {
+    width: 95% !important;
+  }
+
+  .social-row {
+    justify-content: left !important;
+  }
+
+  .company,
+  .quick-link,
+  .contact,
+  .copyright {
+    text-align: left !important;
+    margin-left: 1rem !important;
+  }
+
+  .logo-footer {
+    width: 90% !important;
+  }
 }
 
 .card .lowest-cost {
@@ -745,15 +806,15 @@ nav .mbr-section-btn {
 
 .navbar {
   display: -webkit-flex;
-  -webkit-flex-wrap: wrap;
-  -webkit-align-items: center;
-  -webkit-justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navbar-collapse {
-  -webkit-flex-basis: 100%;
-  -webkit-flex-grow: 1;
-  -webkit-align-items: center;
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
 }
 
 .nav-dropdown .link {
@@ -763,16 +824,16 @@ nav .mbr-section-btn {
 
 .nav {
   display: -webkit-flex;
-  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .row {
   display: -webkit-flex;
-  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .justify-content-center {
-  -webkit-justify-content: center;
+  justify-content: center;
 }
 
 .form-inline {
@@ -780,7 +841,7 @@ nav .mbr-section-btn {
 }
 
 .card-wrapper {
-  -webkit-flex: 1;
+  flex: 1;
 }
 
 .carousel-control {
@@ -1032,6 +1093,10 @@ textarea {
 form .btn {
   height: auto;
   width: 95%;
+}
+.rates-input,
+.rates-button button {
+  width: 100% !important;
 }
 
 .d-flex input {
