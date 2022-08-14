@@ -5,15 +5,39 @@
   font-family: "Baloo Bhai 2", cursive;
 }
 
-.card {
+/*CONTAINERS*/
+
+.signup-container {
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.login-container {
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.signup-card-body {
+  width: 60%;
   border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
   border-top-right-radius: 18px !important;
   border-bottom-right-radius: 18px !important;
+  border: 1px solid rgb(26, 140, 201);
+}
+
+.login-card-body {
+  width: 60%;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-top-right-radius: 18px !important;
+  border-bottom-right-radius: 18px !important;
+  border: 1px solid rgb(26, 140, 201);
 }
 
 .google {
   cursor: pointer;
+  width: 100%;
 }
 
 .google:hover {
@@ -27,9 +51,28 @@
 
 .line {
   height: 2px;
-  width: 27%;
+  width: 25%;
 }
 
 .card-img-top {
   width: 35px !important;
+}
+.email {
+  width: 100%;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 768px) {
+  .signup-card-body {
+    width: 100%;
+  }
+
+  .google {
+    width: 100%;
+  }
+
+  .login-card-body {
+    width: 100%;
+  }
 }
