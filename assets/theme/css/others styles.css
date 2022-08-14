@@ -7,26 +7,20 @@
 
 /*CONTAINERS*/
 
-.signup-container {
-  width: 100vw;
+.signup-container,
+.forgot-container,
+.login-container,
+.reset-container,
+.login2-container {
+  width: 95vw;
   margin: 0 auto;
 }
 
-.login-container {
-  width: 100vw;
-  margin: 0 auto;
-}
-
-.signup-card-body {
-  width: 60%;
-  border-top-left-radius: 0 !important;
-  border-bottom-left-radius: 0 !important;
-  border-top-right-radius: 18px !important;
-  border-bottom-right-radius: 18px !important;
-  border: 1px solid rgb(26, 140, 201);
-}
-
-.login-card-body {
+.signup-card-body,
+.login-card-body,
+.login2-card-body,
+.forgot-card-body,
+.reset-card-body {
   width: 60%;
   border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
@@ -57,22 +51,38 @@
 .card-img-top {
   width: 35px !important;
 }
-.email {
+.email,
+.content-input,
+.email-input {
   width: 100%;
+}
+
+.instructions-card {
+  width: 70%;
+}
+
+.login-instructions-card {
+  width: 80%;
 }
 
 /*MEDIA QUERIES*/
 
 @media (max-width: 768px) {
-  .signup-card-body {
+  .signup-card-body,
+  .forgot-card-body,
+  .login-card-body,
+  .login2-card-body,
+  .reset-card-body {
     width: 100%;
   }
 
   .google {
     width: 100%;
   }
-
-  .login-card-body {
+}
+@media (max-width: 1024px) {
+  .instructions-card,
+  .login-instructions-card {
     width: 100%;
   }
 }
